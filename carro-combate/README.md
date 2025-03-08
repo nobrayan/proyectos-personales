@@ -18,3 +18,7 @@ Imágenes del diseño y funcionamiento.
 - Funcionamiento
 
 ![carro-3](https://github.com/user-attachments/assets/397d7873-6ca8-4edf-8fc5-eef8a8e39044)
+
+- Mando ESP-NOW
+
+![mando-espnow](https://github.com/user-attachments/assets/e03882e6-144c-407e-8ea5-c6ff8d3bb49e)
