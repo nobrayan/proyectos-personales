@@ -23,7 +23,7 @@ Capturas de pantalla de la aplicación móvil.
 ![webt-4](https://github.com/user-attachments/assets/e08de4a8-5174-44ba-85ff-357563331b7b)
 ![webt-5](https://github.com/user-attachments/assets/9f7703ff-501b-4212-9a5b-fa9c36cf6407)
 
-- Envio de Configuracion Wi-Fi
+- Envio de configuración Wi-Fi
 
 ![webt-7](https://github.com/user-attachments/assets/c6e217d4-13a1-481a-8f1c-4ae8929356b1)
 
