@@ -4,4 +4,4 @@ Este repositorio contiene mis proyectos personales en distintas áreas como **si
 
 Aquí encontrarás código, esquemas y documentación de cada proyecto.
 
-_**(Info: En cada proyecto hay imágenes, códigos, APKs o archivos necesarios)**_
+_(Información: En cada proyecto hay imágenes, códigos, APKs o archivos necesarios)_
