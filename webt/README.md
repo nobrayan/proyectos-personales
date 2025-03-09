@@ -2,7 +2,7 @@
 
 Aplicación móvil para la configuración de la conexión Wi-Fi de un microcontrolador mediante Bluetooth Classic y visualización de la página web creada por el microcontrolador a través de un Web Viewer, junto con un código de ejemplo desarrollado en .cpp con PlatformIO.
 
-Código de ejemplo para la conexión, autenticación, filtrado, separación y envío de datos entre la aplicación y el microcontrolador, con almacenamiento de la configuración de red Wi-Fi en memoria, junto con la creación de una página web de ejemplo utilizando mDNS.
+Código de ejemplo para la conexión, autenticación, filtrado, separación y envío de datos entre la aplicación y el microcontrolador, con almacenamiento de la configuración de red Wi-Fi en memoria _**(versión 1.0.1-beta o superior)**_, junto con la creación de una página web de ejemplo utilizando mDNS.
 
 Probada utilizando el módulo ESP32-DEVKIT-V1 y Android 11.
 
