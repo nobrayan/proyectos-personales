@@ -3,6 +3,8 @@ Aplicación para dispositivos Android destinada al control de movimiento de un c
 
 Probada utilizando el módulo ESP32-S3-WROOM-1 (N16R8) y un puente H modelo L293D y L298.
 
+_(**Información:** En este repositorio se encuentra el archivo **.aia** del proyecto realizado con Kodular)_
+
 ## Imágenes
 Capturas de pantalla de la App en Android (11).
 
