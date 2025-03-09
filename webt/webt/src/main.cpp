@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <Preferences.h>
 #include <BluetoothSerial.h>
 #include <WiFi.h>
 #include <ESPmDNS.h>
@@ -7,14 +8,16 @@
 const String btname = "WeBT"; // Nombre del dispositivo Bluetooth
 const String mdnsname = "esp32"; // Nombre de la red mDNS (http://esp32.local)
 
-String ssid = "none";  // SSID
-String password = "none";  // PASS
+String ssid = "&none/";  // SSID
+String password = "&none/";  // PASS
 String guardar_red = "false";  // Guardar red
 String web_ip = "none";  // IP
 String estado_web = "false";
 
 BluetoothSerial SerialBT;
 int conexion_bt = 0;
+
+Preferences preferences; // Crea un objeto de almacenamiento
 
 void bt_begin();
 void bluetooth();
@@ -26,13 +29,20 @@ WebServer server(80);
 void setup() {
   // Iniciar la comunicación serial para monitoreo
   Serial.begin(115200);
-  
+
+  preferences.begin("config_wifi", true); // Iniciar el almacenamiento
+  ssid = preferences.getString("ssid", "&none/"); // Leer el SSID
+  password = preferences.getString("password", "&none/"); // Leer la contraseña
+  preferences.end(); // Finalizar el almacenamiento
+
+  if ((ssid != "&none/") && (password != "&none/")) wifi_begin(ssid, password);
+
   bt_begin();
 }
 
 void loop() {
   bluetooth();
-  server.handleClient();
+  if (estado_web != "false") server.handleClient();
   delay(2500);
 }
 
@@ -57,7 +67,10 @@ void bluetooth() {
     else if (conexion_bt == 1) {
       if (SerialBT.available()) {
         String receivedData = SerialBT.readString();
-        if (receivedData == "%ESP.ENTER%") conexion_bt = 2;
+        if (receivedData == "%ESP.ENTER%") {
+          Serial.println("Dispositivo conectado correctamente...");
+          conexion_bt = 2;
+        }
         else {
           conexion_bt = 0;
           bt_begin();
@@ -66,7 +79,7 @@ void bluetooth() {
     }
     // Conexión exitosa, enviar datos
     else if (conexion_bt == 2) {
-      if (estado_web == "true") SerialBT.println("/ESP.OK&" + web_ip + "&true#");
+      if (estado_web == "true") SerialBT.println("/" + ssid + "&" + web_ip + "&true#");
       else if (estado_web == "false") SerialBT.println("/ESP.OK&IP&false#");
 
       if (SerialBT.available()) {
@@ -86,6 +99,17 @@ void bluetooth() {
           ssid = separacion_msg[1];
           password = separacion_msg[2];
           guardar_red = separacion_msg[3];
+          preferences.begin("config_wifi", false); // Iniciar el almacenamiento
+          if (guardar_red == "true") {
+            Serial.println("Guardando red en memoria...");
+            preferences.putString("ssid", ssid); // Guardar el SSID
+            preferences.putString("password", password); // Guardar la contraseña
+          }
+          else {
+            Serial.println("Borrando red de memoria...");
+            preferences.clear(); // Limpiar el almacenamiento
+          }
+          preferences.end(); // Finalizar el almacenamiento
           wifi_begin(ssid, password);
         }
       }
@@ -132,8 +156,8 @@ void wifi_begin(String ssid, String password) {
   estado_web = "true";
 }
 
+// Ejemplo de página HTML con formulario
 void handleRoot() {
-  // Generar la página HTML con formulario, CSS y JS
   String html = "<html><head><title>Formulario ESP32</title>";
   html += "<style>";
   html += "body { font-family: 'Arial', sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }";
