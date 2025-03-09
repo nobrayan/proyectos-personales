@@ -19,9 +19,9 @@ Capturas de pantalla de la aplicación móvil.
 
 - Conexión Bluetooth
 
-![webt-6](https://github.com/user-attachments/assets/f4bb0bc1-a9b8-48ef-a09b-b73fcb93be50)
 ![webt-4](https://github.com/user-attachments/assets/e08de4a8-5174-44ba-85ff-357563331b7b)
 ![webt-5](https://github.com/user-attachments/assets/9f7703ff-501b-4212-9a5b-fa9c36cf6407)
+![webt-6](https://github.com/user-attachments/assets/f4bb0bc1-a9b8-48ef-a09b-b73fcb93be50)
 
 - Envio de configuración Wi-Fi
 
