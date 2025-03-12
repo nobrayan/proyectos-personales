@@ -1,5 +1,7 @@
 # WeBT
-### **[UPDATE 2.0.0-beta]**
+Aplicación móvil para la configuración de la conexión Wi-Fi de un microcontrolador mediante Bluetooth Classic y Bluetooth Low Energy (WeBT 2.0.0-beta o superior) y visualización de la página web creada por el microcontrolador a través de un Web Viewer, junto con un código de ejemplo desarrollado en .cpp con PlatformIO y MicroPython.
+
+## **[UPDATE 2.0.0-beta]**
 Mejoras y nuevas funciones:
 
 - Rediseño de interfaces.
@@ -11,11 +13,10 @@ Mejoras y nuevas funciones:
 
 ## Información
 
-Aplicación móvil para la configuración de la conexión Wi-Fi de un microcontrolador mediante Bluetooth Classic y Bluetooth Low Energy (WeBT 2.0.0-beta o superior) y visualización de la página web creada por el microcontrolador a través de un Web Viewer, junto con un código de ejemplo desarrollado en .cpp con PlatformIO y MicroPython.
-
 Código de ejemplo para la conexión, autenticación, filtrado, separación y envío de datos entre la aplicación y el microcontrolador, con almacenamiento de la configuración de red Wi-Fi en memoria _**(versión 1.0.1-beta o superior)**_, junto con la creación de una página web de ejemplo utilizando mDNS.
 
 Probada utilizando el módulo ESP32-DEVKIT-V1 y Android 11.
+
 Probada con MicroPython v1.24.1 on 2024-11-29; Generic ESP32 module with ESP32.
 
 _(Información: En este repositorio se encuentra el archivo **.aia** del proyecto realizado con Kodular)_
