@@ -7,18 +7,18 @@ En conjunto con: "MandoBLE" para mando inalámbrico.
 ## Imágenes
 Imágenes del diseño y funcionamiento.
 
-- PCB
+- ### PCB
 
 ![carro-1](https://github.com/user-attachments/assets/ecc37865-58ca-4739-999d-c87a8dbab092)
 
-- Montaje
+- ### Montaje
 
 ![carro-2](https://github.com/user-attachments/assets/eecc744f-556d-4596-ad91-d5c7f1ba4c1a)
 
-- Funcionamiento
+- ### Funcionamiento
 
 ![carro-3](https://github.com/user-attachments/assets/397d7873-6ca8-4edf-8fc5-eef8a8e39044)
 
-- Mando ESP-NOW
+- ### Mando ESP-NOW
 
 ![mando-espnow](https://github.com/user-attachments/assets/e03882e6-144c-407e-8ea5-c6ff8d3bb49e)
