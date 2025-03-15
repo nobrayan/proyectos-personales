@@ -28,7 +28,7 @@ Capturas de pantalla de la App en Android (11).
 
 ![mandoble-4](https://github.com/user-attachments/assets/a903666f-595f-4b73-bb5b-d2239ca04ca4)
 
-# Video de funcionamiento
+# Video
 
 https://github.com/user-attachments/assets/076bbbb6-0a9e-446c-af34-0d3efe7da033
 
