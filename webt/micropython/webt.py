@@ -2,7 +2,7 @@
 
 Creado por @nobrayan
 WeBT (Bluetooth BLE)
-en conjunto con webt 1.0.0-beta.apk
+en conjunto con webt 1.1.0-beta.apk
 
 """
 
@@ -159,6 +159,14 @@ def on_data_received():
                     if separacion_msg[0] == "ESP.START":
                         print("Enviando informacion de inicio...")
                         enviar_msgble(ssid, web_ip, estado_web, "error")
+                    elif separacion_msg[0] == "ESP.RESET":
+                        # ERROR 600: Reiniciar ESP...
+                        enviar_msgble("ESP.OK", "IP", "false", "600")
+                        print(f"Reiniciando...")
+                        
+                        # Reiniciar el ESP32
+                        time.sleep(2)
+                        machine.reset()
                     else:
                         # Asignar los datos recibidos
                         ssid = separacion_msg[1]
