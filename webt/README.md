@@ -3,6 +3,10 @@ Aplicación móvil para la configuración de la conexión Wi-Fi de un microcontr
 
 _(Información: Código MicroPython requiere de la librería BLE.py)_
 
+## [ UPDATE 1.1.0-beta ]
+- Se agregó la opción de reinicio del sistema ante cualquier error, manteniendo pulsado el botón de desconexión de Bluetooth si el dispositivo está conectado.
+- Mejoras en las ventanas de mensajes.
+
 ## Información
 
 Código de ejemplo para la conexión, autenticación, filtrado, separación y envío de datos entre la aplicación y el microcontrolador, con almacenamiento de la configuración de red Wi-Fi en memoria.
