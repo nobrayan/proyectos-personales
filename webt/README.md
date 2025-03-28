@@ -1,5 +1,5 @@
 # WeBT
-Aplicación móvil para la configuración de la conexión Wi-Fi de un microcontrolador mediante Bluetooth Low Energy y visualización de la página web creada por el microcontrolador a través de un Web Viewer, junto con un código de ejemplo desarrollado en C++ con PlatformIO y MicroPython v1.24.1.
+Aplicación móvil para la configuración de la conexión Wi-Fi de un microcontrolador mediante Bluetooth Low Energy y visualización de la página web creada por el microcontrolador a través de un Web Viewer, junto con un código de ejemplo desarrollado en MicroPython v1.24.1.
 
 _(Información: Código MicroPython requiere de la librería BLE.py)_
 
