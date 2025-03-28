@@ -41,4 +41,6 @@ Capturas de pantalla de la aplicación móvil.
 ![webt-11](https://github.com/user-attachments/assets/d0730c91-0511-4ea5-be30-e6f2d76b1e14)
 
 # Video
+https://github.com/user-attachments/assets/d34703ae-7b0b-488b-a060-a61465053aeb
+
 https://github.com/user-attachments/assets/41e7e312-6221-460e-a6b1-d93e50089878
