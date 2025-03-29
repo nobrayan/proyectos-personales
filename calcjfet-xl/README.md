@@ -1,12 +1,26 @@
 # CalcJFET-XL
-
 CalcJFET-XL es una herramienta en Excel con macros (VBA) diseñada para calcular y visualizar la curva característica de un JFET. Ideal para estudiantes, ingenieros y entusiastas de la electrónica que quieran analizar el comportamiento de un transistor de efecto de campo de unión (JFET) sin necesidad de software avanzado.
 
-## Información
+## Importante
+El archivo está libre de riesgos. Sin embargo, si aparece el mensaje:
 
+ ❝ **Microsoft bloqueó la ejecución de macros porque el origen de este archivo no es de confianza.** ❞
+
+Sigue estos pasos para desbloquearlo:
+
+-> Haz clic derecho sobre el archivo.
+-> Selecciona Propiedades.
+-> En la pestaña General, busca la sección Seguridad.
+-> Marca la opción Desbloquear y haz clic en Aplicar.
+
+Después de esto, podrás ejecutar las macros sin problemas.
+
+![calcjfet-xl-0](https://github.com/user-attachments/assets/35a2d636-d330-48bd-858c-fd46b9036abd)
+
+## Información
 Este mini proyecto fue originalmente desarrollado para una clase de _Electrónica 2_ de la UDI, pero sigue siendo útil para aprendizaje y análisis.
 
-**Si tienes ideas para mejorarlo o encuentras un error, no dudes en contribuir...**
+### Si tienes ideas para mejorarlo o encuentras un error, no dudes en contribuir...
 
 # Imágenes
 
